@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    font-style: unset;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #161748;
+    color: aliceblue;
+    height: 60px;
+    align-items: center;
+    font-style: Trebuchet;
+}
+.subnav{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
