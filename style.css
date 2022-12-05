@@ -1,20 +1,88 @@
 *{
+    box-sizing: border-box;
+}
+
+body{
     margin: 0px;
     padding: 0px;
+    font-variant: small-caps;
 }
 .nav{
-    font-style: unset;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-    background-color: #161748;
-    color: aliceblue;
-    height: 60px;
+    justify-content: space-between;
     align-items: center;
-    font-style: Trebuchet;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
 }
-.subnav{
-    width: 400px;
+.myname{
+    font-size: 2.5rem;
+    margin: .8rem;
+}
+.subnav ul{
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    justify-content: space-around;
+}
+.subnav li{
+    list-style: none;
+}
+.subnav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.subnav li:hover{
+    background-color: #555;
+    border-radius: 10px;
+}
+.totoggle{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+}
+.totoggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.bodyy{
+    height: 2500px;
+    background-color: green;
+}
+@media (max-width: 720px){
+    .totoggle{
+        display: flex;
+    }
+    .subnav{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .subnav li{
+        text-align: center;
+    }
+    .subnav a{
+        padding: 0.5rem 1rem;
+    }
+    .subnav.active{
+        display: flex;
+        padding-bottom: 20px;
+    }
 }
