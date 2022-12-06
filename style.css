@@ -3,17 +3,24 @@
 }
 
 body{
+    background-color: rgb(9, 11, 14);
     margin: 0px;
     padding: 0px;
     font-variant: small-caps;
+    letter-spacing: 0.1em;
+    color: rgb(88, 231, 231);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(0,0,0);
     color: white;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
 }
 .myname{
@@ -28,7 +35,7 @@ body{
 .subnav li{
     list-style: none;
 }
-.subnav a{
+.subnav a,.resume a{
     text-decoration: none;
     color: white;
     display: block;
@@ -38,6 +45,16 @@ body{
 .subnav li:hover{
     background-color: #555;
     border-radius: 10px;
+}
+.resume a{
+    text-align: center;
+    color: rgb(39, 158, 158);
+    background-color: white;
+    border-radius: 10px;
+}
+.resume a:hover{
+    color: white;
+    background-color: rgb(36, 92, 36);
 }
 .totoggle{
     position: absolute;
@@ -56,10 +73,35 @@ body{
     border-radius: 10px;
 }
 .bodyy{
-    height: 2500px;
-    background-color: green;
+    margin-top: 70px;
+    padding-top: 10px;
+    font-variant: ordinal;
 }
-@media (max-width: 720px){
+.bodyy p{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.photo{
+    width: 700px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.photo img{
+    width: 270px;
+    height: 300px;
+    border-radius: 50px;
+}
+.photo div{
+    padding: 30px;
+}
+.resume{
+    margin: auto;
+}
+@media (max-width: 674px){
     .totoggle{
         display: flex;
     }
@@ -84,5 +126,13 @@ body{
     .subnav.active{
         display: flex;
         padding-bottom: 20px;
+    }
+    .bodyy{
+        font-variant: 'Candara';
+    }
+    .photo{
+        width: 300px;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
     }
 }
