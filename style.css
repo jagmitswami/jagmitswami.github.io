@@ -22,6 +22,7 @@ body{
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 999;
 }
 .myname{
     font-size: 2.5rem;
@@ -73,17 +74,16 @@ body{
     border-radius: 10px;
 }
 .bodyy{
-    margin-top: 70px;
+    margin-top: 90px;
     padding-top: 10px;
-    font-variant: ordinal;
-}
-.bodyy p{
     text-align: center;
     font-size: 2.3rem;
+    color: aliceblue;
 }
 .photo{
     width: 700px;
     margin: auto;
+    margin-top: 40px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -94,6 +94,8 @@ body{
     width: 270px;
     height: 300px;
     border-radius: 50px;
+    display: block;
+    margin: auto;
 }
 .photo div{
     padding: 30px;
@@ -101,6 +103,88 @@ body{
 .resume{
     margin: auto;
 }
+.des{
+    width: 770px;
+    margin: auto;
+    text-align: justify;
+    margin-top: 15px;
+}
+.aboutme{
+    width: fit-content;
+    margin: auto;
+    font-size: 2.1rem;
+}
+.vertline{
+    height: 1.5px;
+    width: 180px;
+    background-color: rgb(39, 158, 158);
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+.services_skills{
+    width: 770px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.serviceimg{
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    margin-top: 40px;
+    grid-template-columns: repeat(3,1fr);
+}
+#skillsimg{
+    grid-template-columns: repeat(4,1fr);
+}
+.serviceimg>div{
+    position: relative;
+    width: 100%;
+}
+.serviceimg img{
+    opacity: 1;
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.skills{
+    margin-top: 40px;
+}
+#skillsimg img{
+    height: 150px;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .serviceimg>div:hover img{
+    opacity: 0.3;
+  }
+  
+  .serviceimg>div:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: rgb(9, 11, 14);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 10px;
+  }
 @media (max-width: 674px){
     .totoggle{
         display: flex;
@@ -127,12 +211,23 @@ body{
         display: flex;
         padding-bottom: 20px;
     }
-    .bodyy{
-        font-variant: 'Candara';
-    }
     .photo{
         width: 300px;
         margin: auto;
         grid-template-columns: repeat(1,1fr);
+        margin-top: -30px;
+    }
+    .des{
+        width: 400px;
+    }
+    .services_skills{
+        width: 300px;
+        margin-top: 30px;
+    }
+    .serviceimg{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #skillsimg{
+        grid-template-columns: repeat(2,1fr);
     }
 }
