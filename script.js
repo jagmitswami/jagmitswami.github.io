@@ -1,19 +1,19 @@
 let togglebutton = document.getElementsByClassName('totoggle')[0];
 let navlink = document.getElementsByClassName('subnav')[0];
-let flagIntro = true;
+
 togglebutton.addEventListener("click",function(){
     navlink.classList.toggle('active');
-    if(flagIntro==true){
-        document.querySelector('.bodyy').style.paddingTop='250px';
-        flagIntro = false;
-    }else{
-        document.querySelector('.bodyy').style.paddingTop='10px';
-        flagIntro = true;
-    }
 });
-// const scrollContainer = document.querySelector("#websites");
+const scrollProjects = document.querySelector("#websites");
 
-// scrollContainer.addEventListener("wheel", (evt) => {
-//     evt.preventDefault();
-//     scrollContainer.scrollLeft += evt.deltaY;
-// });
+scrollProjects.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollProjects.scrollLeft += evt.deltaY;
+});
+
+const scrollServices = document.querySelector("#service_des");
+
+scrollServices.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollServices.scrollLeft += evt.deltaY;
+});

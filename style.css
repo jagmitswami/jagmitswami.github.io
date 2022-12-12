@@ -134,7 +134,13 @@ body{
     margin: auto;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 50px;
+}
+.projects{
+    letter-spacing: 0em;
+    margin-bottom: 40px;
+}
+.services{
+    margin-top: 40px;
 }
 .serviceimg, .projectsimg{
     margin: auto;
@@ -215,6 +221,9 @@ body{
     margin: auto;
     margin-bottom: 20px;
   }
+  .secondary{
+    display: none;
+  }
   .linksinprojects{
     margin-top: 20px;
   }
@@ -229,6 +238,9 @@ body{
   }
   .techstack{
     background-color: black;
+  }
+  #section1,#section2,#section3, #section4, #section5{
+    margin-bottom: 100px;
   }
 @media (max-width: 674px){
     .totoggle{
@@ -269,9 +281,30 @@ body{
         width: 350px;
         margin-top: 30px;
     }
-    .serviceimg{
-        grid-template-columns: repeat(1,1fr);
+    #service_des{
+        overflow-x: auto;
     }
+    #service_des::-webkit-scrollbar{
+        width: 0px;
+    }
+    #service_des>div{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #service_des .middle{
+        opacity: 0;
+    }
+    #service_des img{
+        transition: 0.1 ease;
+    }
+    #service_des>div:hover img{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .secondary{
+        display: block;
+      }
     #skillsimg{
         grid-template-columns: repeat(2,1fr);
     }
