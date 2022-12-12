@@ -288,7 +288,10 @@ body{
         margin-top: 5px;
     }
     #websites{
-        overflow-x: hidden;
+        overflow-x: auto;
+    }
+    #websites::-webkit-scrollbar{
+        width: 0px;
     }
     #websites>div{
         width: 300px;

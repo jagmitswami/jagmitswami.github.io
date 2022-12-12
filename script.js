@@ -11,9 +11,9 @@ togglebutton.addEventListener("click",function(){
         flagIntro = true;
     }
 });
-const scrollContainer = document.querySelector("#websites");
+// const scrollContainer = document.querySelector("#websites");
 
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+// scrollContainer.addEventListener("wheel", (evt) => {
+//     evt.preventDefault();
+//     scrollContainer.scrollLeft += evt.deltaY;
+// });
