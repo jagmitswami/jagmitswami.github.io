@@ -96,14 +96,13 @@ body{
     color: aliceblue;
 }
 .photo{
-    width: 1000px;
+    width: 950px;
     margin: auto;
     margin-top: 40px;
     display: grid;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2.1rem;
     grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    font-size: 2.1rem;
 }
 .photo img{
     width: 270px;
@@ -120,7 +119,7 @@ body{
     color: white;
 }
 .des{
-    width: 770px;
+    width: 950px;
     margin: auto;
     text-align: justify;
     margin-top: 15px;
@@ -140,7 +139,7 @@ body{
     margin-top: 2px;
 }
 .services_skills,.projects{
-    width: 770px;
+    width: 950px;
     margin: auto;
     text-align: center;
     margin-top: 40px;
@@ -254,15 +253,16 @@ body{
     margin-bottom: 100px;
   }
   .contact_me{
-    width: 770px;
+    width: 950px;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
   .contact_me ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+    padding-left: 0;
   }
   .contact_me ul>a{
     display: flex;
