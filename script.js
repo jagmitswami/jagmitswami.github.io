@@ -4,8 +4,14 @@ let navlink = document.getElementsByClassName('subnav')[0];
 togglebutton.addEventListener("click",function(){
     navlink.classList.toggle('active');
 });
-const scrollProjects = document.querySelector("#websites");
 
+
+let toclose = document.querySelector('.toggle_click');
+toclose.addEventListener("click",function(){
+    navlink.classList.toggle('active');
+});
+
+const scrollProjects = document.querySelector("#websites");
 scrollProjects.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollProjects.scrollLeft += evt.deltaY;

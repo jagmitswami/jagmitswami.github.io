@@ -8,7 +8,7 @@ body{
     padding: 0px;
     font-variant: small-caps;
     letter-spacing: 0.1em;
-    color: rgb(88, 231, 231);
+    color: aqua;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav{
@@ -36,13 +36,17 @@ body{
 .subnav li{
     list-style: none;
 }
-.linksinprojects li{
-    background-color: #555;
+.linksinprojects li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: skyblue;
     border-radius: 10px;
 }
 .subnav a,.resume a{
     text-decoration: none;
-    color: white;
+    color: aqua;
     display: block;
     padding: 1rem;
     font-size: 1.2rem;
@@ -51,18 +55,22 @@ body{
     background-color: #555;
     border-radius: 10px;
 }
-.linksinprojects li:hover{
+.linksinprojects li a:hover{
     background-color: black;
+    color: aqua;
+    border: 2px solid rgb(6, 6, 133);
 }
 .resume a{
     text-align: center;
-    color: rgb(39, 158, 158);
-    background-color: white;
+    font-weight: bold;
+    color: black;
+    background-color: skyblue;
     border-radius: 10px;
 }
 .resume a:hover{
-    color: white;
-    background-color: rgb(36, 92, 36);
+    color: rgb(6, 6, 133);
+    background-color: aqua;
+    border: 2px solid rgb(6, 6, 133);
 }
 .totoggle{
     position: absolute;
@@ -88,11 +96,11 @@ body{
     color: aliceblue;
 }
 .photo{
-    width: 700px;
+    width: 1000px;
     margin: auto;
     margin-top: 40px;
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 2.1rem;
     grid-template-columns: repeat(2,1fr);
@@ -109,6 +117,7 @@ body{
 }
 .resume{
     margin: auto;
+    color: white;
 }
 .des{
     width: 770px;
@@ -120,11 +129,12 @@ body{
     width: fit-content;
     margin: auto;
     font-size: 2.1rem;
+    color: white;
 }
 .vertline{
     height: 1.5px;
     width: 180px;
-    background-color: rgb(39, 158, 158);
+    background-color: aqua;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 2px;
@@ -160,7 +170,7 @@ body{
     background-color: white;
 }
 #websites>div:hover{
-    background-color: rgb(39, 158, 158);
+    background-color: aqua;
 }
 
 .serviceimg>div{
@@ -238,9 +248,53 @@ body{
   }
   .techstack{
     background-color: black;
+    color: rgb(253, 126, 80);
   }
   #section1,#section2,#section3, #section4, #section5{
     margin-bottom: 100px;
+  }
+  .contact_me{
+    width: 770px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contact_me ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+  .contact_me ul>a{
+    display: flex;
+    gap: 20px;
+  }
+  .contact_me li{
+    list-style: none;
+  }
+  
+  .contact_me a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: skyblue;
+    border-radius: 10px;
+  }
+  .contact_me ul>a:hover{
+    color: rgb(6, 6, 133);
+    background-color: aqua;
+    border: 2px solid rgb(6, 6, 133);
+  }
+  .contact_me img{
+    border-radius: 50%;
+    width: 30px;
+  }
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
   }
 @media (max-width: 674px){
     .totoggle{
@@ -335,5 +389,11 @@ body{
         width: 270px;
         margin: auto;
         margin-bottom: 20px;
+    }
+    .contact_me{
+        width: 350px;
+    }
+    .contact_me ul{
+        grid-template-columns: repeat(1,1fr);
     }
 }
