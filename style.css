@@ -96,7 +96,7 @@ body{
     color: aliceblue;
 }
 .photo{
-    width: 950px;
+    width: 721px;
     margin: auto;
     margin-top: 40px;
     display: grid;
@@ -119,7 +119,7 @@ body{
     color: white;
 }
 .des{
-    width: 950px;
+    width: 721px;
     margin: auto;
     text-align: justify;
     margin-top: 15px;
@@ -139,7 +139,7 @@ body{
     margin-top: 2px;
 }
 .services_skills,.projects{
-    width: 950px;
+    width: 721px;
     margin: auto;
     text-align: center;
     margin-top: 40px;
@@ -253,7 +253,7 @@ body{
     margin-bottom: 100px;
   }
   .contact_me{
-    width: 950px;
+    width: 721px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 80px;
@@ -296,7 +296,108 @@ body{
     text-align: center;
     padding: 25px;
   }
-@media (max-width: 674px){
+  @media (max-width: 750px){
+    .totoggle{
+        display: flex;
+    }
+    .subnav{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .subnav li{
+        text-align: center;
+    }
+    .subnav a{
+        padding: 0.5rem 1rem;
+    }
+    .subnav.active{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .photo{
+        width: 480px;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -30px;
+    }
+    .des{
+        width: 480px;
+    }
+    .services_skills{
+        width: 480px;
+        margin-top: 30px;
+    }
+    #service_des{
+        overflow-x: auto;
+    }
+    #service_des::-webkit-scrollbar{
+        width: 0px;
+    }
+    #service_des>div{
+        width: 430px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #service_des .middle{
+        opacity: 0;
+    }
+    #service_des img{
+        transition: 0.1 ease;
+    }
+    #service_des>div:hover img{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .secondary{
+        display: block;
+      }
+    #skillsimg{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .projects{
+        width: 480px;
+    }
+    .linksinprojects{
+        display: block;
+    }
+    .linksinprojects ul{
+        display: flex;
+    }
+    .linksinprojects li{
+        margin-top: 5px;
+    }
+    #websites{
+        overflow-x: auto;
+    }
+    #websites::-webkit-scrollbar{
+        width: 0px;
+    }
+    #websites>div{
+        width: 430px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #websites>div>div{
+        width: 270px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .contact_me{
+        width: 480px;
+    }
+    .contact_me ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 500px){
     .totoggle{
         display: flex;
     }
