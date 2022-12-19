@@ -290,6 +290,25 @@ body{
     border-radius: 50%;
     width: 30px;
   }
+  .stats{
+    width: 750px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .stats img{
+    width: 100%;
+  }
+  .stats img:hover{
+    transform: scale(1.05);
+  }
+  .calender_container{
+    width: 750px;
+    margin: auto;
+  }
   footer{
     background-color: black;
     color: white;
@@ -396,6 +415,20 @@ body{
     .contact_me ul{
         grid-template-columns: repeat(1,1fr);
     }
+    .stats{
+        width: 480px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .calender_container{
+        width: 750px;
+        margin-left: 10%;
+    }
+    .calender_container{
+        overflow-x: auto;
+    }
+    .calender_container::-webkit-scrollbar{
+        width: 0px;
+    }
 }
 @media (max-width: 500px){
     .totoggle{
@@ -496,5 +529,8 @@ body{
     }
     .contact_me ul{
         grid-template-columns: repeat(1,1fr);
+    }
+    .stats{
+        width: 350px;
     }
 }

@@ -185,36 +185,28 @@
             </ul>
         </div>
     </div>
-    <footer><span>© 2022 All rights reserved</span></footer>
-
-    <!-- <script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-
-    
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-
-    
-    <div class="calendar">
+    <div class="aboutme">Stats</div>
+    <div class="vertline"></div>
+    <div class="stats">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=jagmitswami&theme=dark&hide_border=false" alt="contributions">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jagmitswami&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="langs">
+    </div>
+    <div class="calender_container">
+    <div class="calendar" style="width: 750px; margin-bottom: 150px;">
+        <!-- Loading stuff -->
         Loading the data just for you.
     </div>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <link rel="stylesheet"href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
     <script>
-        GitHubCalendar(".calendar", "your-username");
+        GitHubCalendar(".calendar", "jagmitswami");
 
-        // or enable responsive functionality:
-        GitHubCalendar(".calendar", "your-username", { responsive: true });
-
-        // Use a proxy
-        GitHubCalendar(".calendar", "your-username", {
-        proxy (username) {
-            return fetch(`https://your-proxy.com/github?user=${jagmitswami}`)
-        }
-        }).then(r => r.text())
-    </script> -->
+        GitHubCalendar(".calendar", "jagmitswami", { responsive: true });
+    </script>
+    </div>
+    <footer><span>© 2022 All rights reserved</span></footer>
 </body>
 <script src="script.js"></script>
 </html>
