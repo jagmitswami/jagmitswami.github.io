@@ -305,10 +305,6 @@ body{
   .stats img:hover{
     transform: scale(1.05);
   }
-  .calender_container{
-    width: 750px;
-    margin: auto;
-  }
   footer{
     background-color: black;
     color: white;
@@ -418,16 +414,6 @@ body{
     .stats{
         width: 480px;
         grid-template-columns: repeat(1,1fr);
-    }
-    .calender_container{
-        width: 750px;
-        margin-left: 10%;
-    }
-    .calender_container{
-        overflow-x: auto;
-    }
-    .calender_container::-webkit-scrollbar{
-        width: 0px;
     }
 }
 @media (max-width: 500px){
