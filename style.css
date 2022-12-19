@@ -424,7 +424,7 @@ body{
         padding-bottom: 20px;
     }
     .photo{
-        width: 300px;
+        width: 350px;
         margin: auto;
         grid-template-columns: repeat(1,1fr);
         margin-top: -30px;
