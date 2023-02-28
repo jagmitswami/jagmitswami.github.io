@@ -29,12 +29,6 @@ scrollTools.addEventListener("wheel", (evt) => {
     scrollTools.scrollLeft += evt.deltaY;
 });
 
-const scrollProjects = document.querySelector("#websites");
-scrollProjects.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollProjects.scrollLeft += evt.deltaY;
-});
-
 const scrollServices = document.querySelector("#service_des");
 
 scrollServices.addEventListener("wheel", (evt) => {
