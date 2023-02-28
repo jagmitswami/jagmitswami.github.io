@@ -312,12 +312,16 @@ body{
   .stats img:hover{
     transform: scale(1.05);
   }
+  .calender_container{
+    width: 750px;
+  }
   footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 25px;
   }
+  
   @media (max-width: 800px){
     .totoggle{
         display: flex;
@@ -431,6 +435,9 @@ body{
         width: 480px;
         grid-template-columns: repeat(1,1fr);
     }
+    .calender_container{
+        width: 480px;
+    }
 }
 @media (max-width: 500px){
     .totoggle{
@@ -530,6 +537,9 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
     .stats{
+        width: 350px;
+    }
+    .calender_container{
         width: 350px;
     }
 }
