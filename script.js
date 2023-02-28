@@ -11,6 +11,24 @@ toclose.addEventListener("click",function(){
     navlink.classList.toggle('active');
 });
 
+const scrollSkills = document.querySelector("#skillsimg");
+scrollSkills.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollSkills.scrollLeft += evt.deltaY;
+});
+
+const scrollSkills2 = document.querySelector("#skillsimg2");
+scrollSkills2.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollSkills2.scrollLeft += evt.deltaY;
+});
+
+const scrollTools = document.querySelector("#toolsimg");
+scrollTools.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollTools.scrollLeft += evt.deltaY;
+});
+
 const scrollProjects = document.querySelector("#websites");
 scrollProjects.addEventListener("wheel", (evt) => {
     evt.preventDefault();

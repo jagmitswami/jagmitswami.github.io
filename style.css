@@ -158,8 +158,11 @@ body{
     margin-top: 40px;
     grid-template-columns: repeat(3,1fr);
 }
-#skillsimg{
+#skillsimg, #toolsimg, #skillsimg2{
     grid-template-columns: repeat(4,1fr);
+}
+#skillsimg>div, #toolsimg>div, #skillsimg2>div{
+    width: 160px;
 }
 #websites{
     grid-template-columns: repeat(3,1fr);
@@ -200,7 +203,7 @@ body{
 .skills{
     margin-top: 40px;
 }
-#skillsimg img{
+#skillsimg img, #toolsimg img, #skillsimg2 img{
     height: 150px;
 }
 .middle {
@@ -378,8 +381,17 @@ body{
     .secondary{
         display: block;
       }
-    #skillsimg{
-        grid-template-columns: repeat(2,1fr);
+    #skillsimg, #toolsimg, #skillsimg2{
+        overflow-x: auto;
+    }
+    #skillsimg::-webkit-scrollbar{
+        width: 0px;
+    }
+    #skillsimg2::-webkit-scrollbar{
+        width: 0px;
+    }
+    #toolsimg::-webkit-scrollbar{
+        width: 0px;
     }
     .projects{
         width: 480px;
@@ -483,9 +495,6 @@ body{
     .secondary{
         display: block;
       }
-    #skillsimg{
-        grid-template-columns: repeat(2,1fr);
-    }
     .projects{
         width: 350px;
     }
